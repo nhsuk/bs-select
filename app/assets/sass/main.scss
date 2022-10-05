@@ -17,3 +17,68 @@ background-color: #ffffff;
 html {
   background-color: #ffffff;
 }
+
+// BS SELECT PROTOTYPE CSS TEST ONLY //
+
+
+// General //
+.bss-h1 {
+  color: #005eb8;
+  margin-bottom: 0;
+}
+
+.bss-main {
+  width: 80rem;
+}
+
+.btn-flex {
+  display: flex;
+  padding: 1.5rem 0;
+  gap: 3rem;
+}
+
+// header //
+
+.bss-page-header {
+  padding: 1.5rem;
+  padding-bottom: 0;
+}
+.bss-header-mini-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bss-header-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 0.875rem;
+}
+
+.bss-header-nav {
+  background-color: #d8dde0; 
+}
+
+.bss-nav-links {
+  padding: 0.75rem;
+  margin: 0 1.5rem;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+
+
+// body //
+
+.alert-tag {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.alert-icon {
+  height: 6.25rem;
+  width: 6.25rem;
+}
