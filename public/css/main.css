@@ -7312,6 +7312,12 @@ html {
   /* [4] */
 }
 
+@media (min-width: 48.0625em) {
+  .nhsuk-grid-column-two-thirds {
+    float: left;
+    width: 100%;
+  }
+}
 .bss-h1 {
   color: #005eb8;
   margin-bottom: 0;

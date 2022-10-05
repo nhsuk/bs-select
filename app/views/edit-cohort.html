@@ -1,0 +1,199 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-bs.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %} BS-Select prototype {% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<header>
+  <div class="bss-page-header">
+    <div>
+      <h1 class="bss-h1">Breast Screening Select</h1>
+    </div>
+    <div class="bss-header-mini-nav">
+      <p>Logged in as: <strong>BSS_uSER-oe_so1</strong></p>
+      <ul class="bss-header-links">
+        <li><a href="#">Home page</a></li>
+        <li><a href="#">Logout</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">User guide</a></li>
+        <li><a href="#">Release notes</a></li>
+      </ul>
+    </div>
+  </div>
+  <nav class="bss-header-nav">
+    <ul class="bss-nav-links">
+      <li><a href="#" class="nav-link">Subject search</a></li>
+      <li><a href="#" class="nav-link">Batch management</a></li>
+      <li><a href="#" class="nav-link">Outcome list</a></li>
+      <li><a href="#" class="nav-link">Parameters</a></li>
+      <li><a href="#" class="nav-link">BSO Mapping</a></li>
+      <li><a href="#" class="nav-link">BSO Contact list</a></li>
+      <li><a href="#" class="nav-link">Monitoring reports</a></li>
+      <li><a href="#" class="nav-link">Failsafe reports</a></li>
+      <li><a href="#" class="nav-link">Estimating</a></li>
+      <li><a href="#" class="nav-link">Round planning</a></li>
+    </ul>
+  </nav>
+</header>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %} {% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <!-- Change the page title here -->
+    <div class="nhsuk-back-link">
+      <a class="nhsuk-back-link__link" href="/unassignedcohort">
+        <svg
+          class="nhsuk-icon nhsuk-icon__chevron-left"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          height="24"
+          width="24"
+        >
+          <path
+            d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"
+          ></path>
+        </svg>
+        Go back</a
+      >
+    </div>
+    <h1>Edit screening cohort</h1>
+
+    <h2>Unassigned cohort</h2>
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="one-half"> Screening cohort name </label>
+      <input
+        class="nhsuk-input nhsuk-u-width-one-half"
+        id="one-half"
+        name="one-half"
+        type="text"
+        value="LPL-Unassigned cohort"
+      />
+    </div>
+
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="select-1"> Screening location </label>
+      <select class="nhsuk-select" id="select-1" name="select-1">
+        <option value="1">Asda carpark</option>
+        <option value="2" selected>Community carpark</option>
+        <option value="3" disabled>City square</option>
+      </select>
+    </div>
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="select-1"> Screening unit </label>
+      <select class="nhsuk-select" id="select-1" name="select-1">
+        <option value="1">Mobile unit 1</option>
+        <option value="2" selected>Large mobile unit</option>
+        <option value="3" disabled>Tiny mobile unit</option>
+      </select>
+    </div>
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="one-quarter">
+        Expected attendance rate
+      </label>
+      <input
+        class="nhsuk-input nhsuk-u-width-one-quarter"
+        id="one-quarter"
+        name="one-quarter"
+        type="text"
+        value="77%"
+      />
+    </div>
+    <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="one-quarter">
+        Cohort colour on graph
+      </label>
+      <input
+        class="nhsuk-input nhsuk-u-width-one-quarter"
+        id="one-quarter"
+        name="one-quarter"
+        type="color"
+      />
+    </div>
+
+    <hr />
+    <h2>Included GP practices</h2>
+    <table role="table" class="nhsuk-table-responsive">
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" class="" scope="col">GP code</th>
+          <th role="columnheader" class="" scope="col">GP practice</th>
+          <th role="columnheader" class="" scope="col">Eligible subjects</th>
+          <th role="columnheader" class="" scope="col">Cohort name</th>
+          <th role="columnheader" class="" scope="col">Amend</th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">Code</span>B1234rt
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">Practice </span>GP
+            practice1
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">subjects </span>21
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">name</span>London
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">Amend </span>Assign
+          </td>
+        </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">Age </span>10 to 11
+            years
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">How much? </span>200mg
+            to 300mg
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">How often? </span>Max
+            3 times in 24 hours
+          </td>
+        </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">Age </span>12 to 17
+            years
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">How much? </span>200mg
+            to 400mg
+          </td>
+          <td role="cell" class="nhsuk-table__cell">
+            <span class="nhsuk-table-responsive__heading">How often? </span>Max
+            3 times in 24 hours
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- End of content -->
+  </div>
+</div>
+{% endblock %}

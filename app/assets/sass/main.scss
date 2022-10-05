@@ -24,6 +24,12 @@ html {
   /* [4] */
 
 }
+@media (min-width: 48.0625em) {
+  .nhsuk-grid-column-two-thirds {
+    float: left;
+    width: 100%;
+  }
+}
 
 // BS SELECT PROTOTYPE CSS TEST ONLY //
 
