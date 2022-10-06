@@ -87,11 +87,16 @@ html {
 .alert-tag {
   margin-bottom: 3rem;
   display: flex;
-  align-items: center;
   gap: 1.5rem;
 }
 
 .alert-icon {
-  height: 6.25rem;
-  width: 6.25rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+// Table 
+
+.bs-table-marginb {
+  margin-bottom: 3rem;
 }
