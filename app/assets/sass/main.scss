@@ -50,6 +50,36 @@ html {
   gap: 3rem;
 }
 
+.bs-table-link {
+  background-color: 	#4c6272;
+  box-shadow: 0 4px 0 #263139;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  font-size: 1.1875rem;
+  cursor: pointer;
+}
+
+.bs-table-link:hover {
+  background-color: #212b32;
+  color: #ffffff;
+}
+.bs-table-link:focus {
+  background: #ffeb3b;
+  box-shadow: 0 4px 0 #212b32;
+  color: #212b32;
+  outline: 4px solid transparent;
+}
+
+.bs-table-link:active {
+  background: #263139;
+  box-shadow: none;
+  top: 4px;
+  color: #ffffff;
+}
+
 // header //
 
 .bss-page-header {

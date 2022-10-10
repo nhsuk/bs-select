@@ -11,62 +11,75 @@
 -->
 
 <!-- Set the page title -->
-{% block pageTitle %}
-  NHS.UK prototype kit
-{% endblock %}
+{% block pageTitle %} BS-Select prototype {% endblock %}
 
 <!-- For adding a breadcrumb -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
 {% block beforeContent %}
-{% endblock %}
+<header>
+  <div class="bss-page-header">
+    <div>
+      <h1 class="bss-h1">Breast Screening Select</h1>
+    </div>
+    <div class="bss-header-mini-nav">
+      <p>Logged in as: <strong>BSS_uSER-oe_so1</strong></p>
+      <ul class="bss-header-links">
+        <li><a href="/index">Home page</a></li>
+        <li><a href="#">Logout</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">User guide</a></li>
+        <li><a href="#">Release notes</a></li>
+      </ul>
+    </div>
+  </div>
+  {% endblock %}
 
-<!-- For adding a back link -->
-<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
-{% block outerContent %}
-{% endblock %}
+  <!-- For adding a back link -->
+  <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+  {% block outerContent %} {% endblock %}
 
-<!-- For adding page content -->
-<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
-{% block content %}
+  <!-- For adding page content -->
+  <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+  {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
-
       <!-- Change the page title here -->
-      <h1>
-        NHS.UK prototype kit
-        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
-      </h1>
+      <h1>BS-Select prototype kit</h1>
 
       <!-- Add your content here -->
       <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
 
       <p class="nhsuk-lede-text">
-        This kit lets you rapidly create HTML prototypes of NHS services.
+        This prototype has been built using the NHS prototype kit and is
+        currently in development
       </p>
 
-      <hr>
+      <hr />
 
-      <h2>
-        About this page
-      </h2>
+      <h2>Current builds</h2>
 
-      <p>
-        Use this page as the index for your project.
-      </p>
+      <div class="nhsuk-action-link">
+        <a class="nhsuk-action-link__link" href="/unassignedcohort">
+          <svg
+            class="nhsuk-icon nhsuk-icon__arrow-right-circle"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            width="36"
+            height="36"
+          >
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"
+            ></path>
+          </svg>
+          <span class="nhsuk-action-link__text">Unassigned cohort</span>
+        </a>
+      </div>
 
-      <p>
-        You'll find the code for this page at <strong>/app/views/index.html</strong>.
-      </p>
+      <hr />
 
-      <p>
-        There is also an <a href="/page-example">example page</a>, which contains a selection of NHS.UK frontend styles and components.
-      </p>
-
-      <hr>
-
-      <h2>
-        Get started
-      </h2>
+      <h2>Get started</h2>
 
       <p>Get started by using the:</p>
 
@@ -78,12 +91,15 @@
           <a href="/docs/page-templates">page templates</a>
         </li>
         <li>
-          code snippets for styles and components from the <a href="https://service-manual.nhs.uk/design-system">NHS digital service manual</a>
+          code snippets for styles and components from the
+          <a href="https://service-manual.nhs.uk/design-system"
+            >NHS digital service manual</a
+          >
         </li>
       </ul>
 
       <!-- End of content -->
-
     </div>
   </div>
-{% endblock %}
+  {% endblock %}
+</header>
