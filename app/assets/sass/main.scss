@@ -130,3 +130,29 @@ html {
 .bs-table-marginb {
   margin-bottom: 3rem;
 }
+.bs-table-marginb24 {
+  margin-bottom: 1.5rem;
+}
+
+// SCREENING PAGINATION
+
+.screening-pagination {
+  list-style-type: none;
+   padding-left: 0;
+ }
+ 
+ .screening-pagination-item {
+   display: inline-block;
+   font-weight: 400;
+   margin-right: 20px;
+ }
+ 
+ .screeing-pagination-current {
+   text-decoration: none;
+   color: #212B32;
+   font-weight: bold;
+ }
+ 
+ .screening-pagination-showing {
+   float: right;
+ }
