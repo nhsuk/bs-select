@@ -59,203 +59,118 @@
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
     <!-- Change the page title here -->
-    <div class="nhsuk-back-link">
-      <a class="nhsuk-back-link__link" href="/unassignedcohort">
-        <svg
-          class="nhsuk-icon nhsuk-icon__chevron-left"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-          height="24"
-          width="24"
-        >
-          <path
-            d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"
-          ></path>
-        </svg>
-        Go back to Screening cohort</a
-      >
-    </div>
-    <h1>Edit screening cohort</h1>
+    
+    <h1>Screening unit list</h1>
 
-    <h2>Unassigned cohort</h2>
+    <nav class="nhsuk-sub-navigation">
+      <ul class="nhsuk-sub-navigation__list">
+        <li class="nhsuk-sub-navigation__item">
+          <a href="#" class="nhsuk-sub-navigation__link" aria-current="page"
+            >Unit list</a
+          >
+        </li>
+        <li class="nhsuk-sub-navigation__item">
+          <a
+            href="#"
+            class="nhsuk-sub-navigation__link"
+            >Unit dashboard</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-    <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="one-half"> Screening cohort name </label>
-      <input
-        class="nhsuk-input nhsuk-u-width-one-half"
-        id="one-half"
-        name="one-half"
-        type="text"
-        value="LPL-Unassigned cohort"
-      />
-    </div>
-
-    <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="select-1"> Screening location </label>
-      <select class="nhsuk-select" id="select-1" name="select-1">
-        <option value="1">Asda carpark</option>
-        <option value="2" selected>Community carpark</option>
-        <option value="3" disabled>City square</option>
-      </select>
-    </div>
-    <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="select-1"> Screening unit </label>
-      <select class="nhsuk-select" id="select-1" name="select-1">
-        <option value="1">Mobile unit 1</option>
-        <option value="2" selected>Large mobile unit</option>
-        <option value="3" disabled>Tiny mobile unit</option>
-      </select>
-    </div>
-    <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="input-width-4">
-        Expected attendance rate
-      </label>
-      <input
-        class="nhsuk-input nhsuk-input--width-4"
-        id="input-width-4"
-        name="test-width-4"
-        type="text"
-        value="77%"
-      />
-    </div>
-    <div class="nhsuk-form-group">
-      <label class="nhsuk-label" for="input-width-4">
-        Cohort colour on graph
-      </label>
-      <input
-        class="nhsuk-input nhsuk-input--width-4"
-        id="input-width-4"
-        name="test-width-4"
-        type="color"
-      />
-    </div>
-
-    <hr />
-    <h2>Included GP practices</h2>
-    <table role="table" class="nhsuk-table-responsive bs-table-marginb24">
+    <table role="table" class="nhsuk-table-responsive bs-table-marginb24 bs-table-margint24">
       <thead role="rowgroup" class="nhsuk-table__head">
         <tr role="row">
-          <th role="columnheader" class="" scope="col">GP code</th>
-          <th role="columnheader" class="" scope="col">GP practice</th>
-          <th role="columnheader" class="" scope="col">Eligible subjects</th>
-          <th role="columnheader" class="" scope="col">Cohort name</th>
-          <th role="columnheader" class="" scope="col">Amend</th>
+          <th role="columnheader" class="" scope="col">Screening unit name</th>
+          <th role="columnheader" class="" scope="col">Unit type</th>
+          <th role="columnheader" class="" scope="col">Status</th>
+          <th role="columnheader" class="" scope="col">&nbsp;</th>
         </tr>
       </thead>
       <tbody class="nhsuk-table__body">
         <tr role="row" class="nhsuk-table__row">
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Code</span>B1234rt
+            <span class="nhsuk-table-responsive__heading">Unit name</span><a href="#">Cheshire unit</a>
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Practice </span>GP
-            practice1
+            <span class="nhsuk-table-responsive__heading">Unit type</span> Mobile
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Subjects </span>21
+            <span class="nhsuk-table-responsive__heading">Status </span>Active
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">name</span>London
-          </td>
-          <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Amend </span
-            ><a href="/edit-cohort2">Assign</a>
+            <span class="nhsuk-table-responsive__heading">edit</span><a href="#">Edit unit details</a>
           </td>
         </tr>
         <tr role="row" class="nhsuk-table__row">
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Code</span>B1235rt
+            <span class="nhsuk-table-responsive__heading">Unit name</span>Mobile unit 4
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Practice</span>GP
-            practice2
+            <span class="nhsuk-table-responsive__heading">Unit type</span> Mobile
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Subjects </span>60
+            <span class="nhsuk-table-responsive__heading">Status </span>Active
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">name</span>London
-          </td>
-          <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Amend </span
-            ><a href="#">Assign</a>
+            <span class="nhsuk-table-responsive__heading">edit</span><a href="#">Edit unit details</a>
           </td>
         </tr>
         <tr role="row" class="nhsuk-table__row">
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Code</span>B1236rt
+            <span class="nhsuk-table-responsive__heading">Unit name</span>St agatha hospital breast clinic
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Practice</span>GP
-            practice3
+            <span class="nhsuk-table-responsive__heading">Unit type</span> Mobile
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Subjects</span>83
+            <span class="nhsuk-table-responsive__heading">Status </span>Active
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">name</span>London
-          </td>
-          <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Amend </span
-            ><a href="#">Assign</a>
+            <span class="nhsuk-table-responsive__heading">edit</span><a href="#">Edit unit details</a>
           </td>
         </tr>
         <tr role="row" class="nhsuk-table__row">
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Code</span>B1237rt
+            <span class="nhsuk-table-responsive__heading">Unit name</span>Diamond mobile 1
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Practice</span>GP
-            practice4
+            <span class="nhsuk-table-responsive__heading">Unit type</span> Mobile
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Subjects</span>56
+            <span class="nhsuk-table-responsive__heading">Status </span>Active
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">name</span>London
-          </td>
-          <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Amend </span
-            ><a href="#">Assign</a>
+            <span class="nhsuk-table-responsive__heading">edit</span><a href="#">Edit unit details</a>
           </td>
         </tr>
         <tr role="row" class="nhsuk-table__row">
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Code</span>B1238rt
+            <span class="nhsuk-table-responsive__heading">Unit name</span>London static 2
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Practice</span>GP
-            practice5
+            <span class="nhsuk-table-responsive__heading">Unit type</span> Static
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Subjects</span>19
+            <span class="nhsuk-table-responsive__heading">Status </span>Active
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">name</span>London
-          </td>
-          <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Amend </span
-            ><a href="#">Assign</a>
+            <span class="nhsuk-table-responsive__heading">edit</span><a href="#">Edit unit details</a>
           </td>
         </tr>
         <tr role="row" class="nhsuk-table__row">
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Code</span>B1239rt
+            <span class="nhsuk-table-responsive__heading">Unit name</span>Mobile unit 1
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Practice</span>GP
-            practice6
+            <span class="nhsuk-table-responsive__heading">Unit type</span> Mobile
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Subjects</span>120
+            <span class="nhsuk-table-responsive__heading">Status </span>Active
           </td>
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">name</span>London
-          </td>
-          <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Amend </span
-            ><a href="#">Assign</a>
+            <span class="nhsuk-table-responsive__heading">edit</span><a href="#">Edit unit details</a>
           </td>
         </tr>
       </tbody>
@@ -282,10 +197,10 @@
             <span>Next >></span>
           </a>
         </li>
-        <p class="screening-pagination-showing">Showing 6 of 224</p>
+        <p class="screening-pagination-showing">Showing 1 of 1</p>
       </ul>
     </nav>
-    <button class="nhsuk-button" type="submit">Save and continue</button>
+    <button class="nhsuk-button" type="submit">Add a screening unit</button>
 
     <!-- End of content -->
   </div>
