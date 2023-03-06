@@ -7420,6 +7420,10 @@ html {
   margin-bottom: 1.5rem;
 }
 
+.bs-table-margint24 {
+  margin-top: 1.5rem;
+}
+
 .screening-pagination {
   list-style-type: none;
   padding-left: 0;
