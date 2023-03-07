@@ -7380,9 +7380,13 @@ html {
 
 .bss-header-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 10px;
   list-style: none;
   font-size: 0.875rem;
+}
+
+li.pipe {
+  color: #0b0c0c;
 }
 
 .bss-header-nav {
@@ -7390,8 +7394,9 @@ html {
 }
 
 .bss-nav-links {
+  font-size: 14px;
   padding: 0.75rem;
-  margin: 0 1.5rem;
+  margin: 10px;
   display: flex;
   gap: 2rem;
   list-style: none;
@@ -7401,27 +7406,29 @@ html {
   font-size: 19px;
 }
 
-.alert-tag {
-  margin-bottom: 3rem;
+.rlp-h1-container {
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.alert-icon {
-  height: 3rem;
-  width: 3rem;
+.rlp-h1-container h1 {
+  font-weight: 300;
+  font-size: 32px;
+  margin-bottom: 0;
 }
 
-.bs-table-marginb {
-  margin-bottom: 3rem;
+.rlp-table {
+  border: 1px solid #4c6272;
 }
 
-.bs-table-marginb24 {
-  margin-bottom: 1.5rem;
+.rlp-thead {
+  background-color: #d8dde0;
 }
 
-.bs-table-margint24 {
-  margin-top: 1.5rem;
+.rlp-subhead {
+  background-color: #aeb7bd;
+  color: #ffffff;
 }
 
 .screening-pagination {
@@ -7437,7 +7444,7 @@ html {
 
 .screeing-pagination-current {
   text-decoration: none;
-  color: #212B32;
+  color: #212b32;
   font-weight: bold;
 }
 

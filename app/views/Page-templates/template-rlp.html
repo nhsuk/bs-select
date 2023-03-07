@@ -24,65 +24,120 @@
     <div class="bss-header-mini-nav">
       <p>Logged in as: <strong>BSS_uSER-oe_so1</strong></p>
       <ul class="bss-header-links">
-        <li><a href="/index">Home page</a></li>
+        <li>
+          <a href="/index">Home page</a>
+        </li>
+        <li class="pipe">|</li>
         <li><a href="#">Logout</a></li>
+        <li class="pipe">|</li>
         <li><a href="#">Help</a></li>
+        <li class="pipe">|</li>
         <li><a href="#">User guide</a></li>
+        <li class="pipe">|</li>
         <li><a href="#">Release notes</a></li>
       </ul>
     </div>
   </div>
-  {% endblock %}
 
-  <!-- For adding a back link -->
-  <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
-  {% block outerContent %} {% endblock %}
+  <nav class="bss-header-nav">
+    <ul class="bss-nav-links">
+      <li><a href="#">Subject search</a></li>
+      <li><a href="#">Batch management</a></li>
+      <li><a href="#">Outcome list</a></li>
+      <li><a href="#">Parameters</a></li>
+      <li><a href="#">BSO mapping</a></li>
+      <li><a href="#">BSO contact list</a></li>
+      <li><a href="#">Monitoring reports</a></li>
+      <li><a href="#">Failsafe reports</a></li>
+      <li><a href="#">Estimating</a></li>
+      <li><a href="#">Round planning</a></li>
+    </ul>
+  </nav>
+</header>
+{% endblock %}
 
-  <!-- For adding page content -->
-  <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
-  {% block content %}
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %} {% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<body>
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <!-- Change the page title here -->
-      <h1>BS-Select prototype kit</h1>
+      <div class="rlp-h1-container">
+        <h1>Welcome to breast screening select</h1>
+      </div>
+
+      <hr />
+
+      <h3>Alerts</h3>
+
+      <table class="rlp-table">
+        <thead class="rlp-thead">
+          <tr>
+            <th></th>
+            <th>To action</th>
+            <th>Number of items</th>
+          </tr>
+        </thead>
+        <thead class="rlp-subhead">
+          <tr>
+            <th>Immediate action</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>icon</td>
+            <td>Automatic batch ready for selection</td>
+            <td>11 batches</td>
+          </tr>
+          <tr>
+            <td>icon</td>
+            <td>Pending subject demographic change</td>
+            <td>8 subjects</td>
+          </tr>
+        </tbody>
+        <thead class="rlp-subhead">
+          <th>Action</th>
+          <th></th>
+          <th></th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>icon</td>
+            <td>Recently added GP practices</td>
+            <td>5 GP practices</td>
+          </tr>
+          <tr>
+            <td>icon</td>
+            <td>Batch analysis report overdue</td>
+            <td>1 report</td>
+          </tr>
+        </tbody>
+        <thead class="rlp-subhead">
+          <th>Round planning action</th>
+          <th></th>
+          <th></th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>icon</td>
+            <td>Current visits capacity and demand warning</td>
+            <td>5 alerts</td>
+          </tr>
+        </tbody>
+      </table>
 
       <!-- Add your content here -->
       <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
 
-      <p class="nhsuk-lede-text">
-        This prototype has been built using the NHS prototype kit and is
-        currently in development
-      </p>
-
-      <hr />
-
-      <h2>Current builds</h2>
-
-      <p>There are no builds available to view</p>
-
-      <hr />
-
-      <h2>Get started</h2>
-
-      <p>Get started by using the:</p>
-
-      <ul>
-        <li>
-          <a href="/docs/how-tos">how to guides</a>
-        </li>
-        <li>
-          <a href="/docs/page-templates">page templates</a>
-        </li>
-        <li>
-          code snippets for styles and components from the
-          <a href="https://service-manual.nhs.uk/design-system"
-            >NHS digital service manual</a
-          >
-        </li>
-      </ul>
-
       <!-- End of content -->
     </div>
   </div>
-  {% endblock %}
-</header>
+</body>
+{% endblock %}
