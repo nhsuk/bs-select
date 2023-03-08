@@ -6,47 +6,468 @@
 <!-- For adding a breadcrumb -->
 <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
 {% block beforeContent %}
-<header>
-  <div class="bss-page-header">
-    <div>
-      <h1 class="bss-h1">Breast Screening Select</h1>
+<body>
+  <header>
+    <div class="bss-page-header">
+      <div>
+        <h1 class="bss-h1">Breast Screening Select</h1>
+      </div>
+      <div class="bss-header-mini-nav">
+        <p>Logged in as: <strong>BSS_uSER-oe_so1</strong></p>
+        <ul class="bss-header-links">
+          <li>
+            <a href="/index">Home page</a>
+          </li>
+          <li class="pipe">|</li>
+          <li><a href="#">Logout</a></li>
+          <li class="pipe">|</li>
+          <li><a href="#">Help</a></li>
+          <li class="pipe">|</li>
+          <li><a href="#">User guide</a></li>
+          <li class="pipe">|</li>
+          <li><a href="#">Release notes</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="bss-header-mini-nav">
-      <p>Logged in as: <strong>BSS_uSER-oe_so1</strong></p>
-      <ul class="bss-header-links">
-        <li>
-          <a href="/index">Home page</a>
-        </li>
-        <li class="pipe">|</li>
-        <li><a href="#">Logout</a></li>
-        <li class="pipe">|</li>
-        <li><a href="#">Help</a></li>
-        <li class="pipe">|</li>
-        <li><a href="#">User guide</a></li>
-        <li class="pipe">|</li>
-        <li><a href="#">Release notes</a></li>
-      </ul>
+  </header>
+  {% endblock %}
+
+  <!-- For adding a back link -->
+  <!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+  {% block outerContent %} {% endblock %}
+
+  <!-- For adding page content -->
+  <!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+  {% block content %}
+  <main>
+    <div class="nhsuk-back-link">
+      <a class="nhsuk-back-link__link" href="#">
+        <svg
+          class="nhsuk-icon nhsuk-icon__chevron-left"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          height="24"
+          width="24"
+        >
+          <path
+            d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"
+          ></path>
+        </svg>
+        Go back to visit list</a
+      >
     </div>
-  </div>
-</header>
-{% endblock %}
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <!-- Change the page title here -->
+        <h1>Create a visit</h1>
 
-<!-- For adding a back link -->
-<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
-{% block outerContent %} {% endblock %}
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="input-width-20"> Visit name </label>
+          <input
+            class="nhsuk-input nhsuk-input--width-20"
+            id="input-width-20"
+            name="test-width-20"
+            type="text"
+          />
+        </div>
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="select-1">
+            Location for screening
+          </label>
+          <select class="nhsuk-select" id="select-1" name="select-1">
+            <option value="1" selected>Location one</option>
+            <option value="2">Location two</option>
+            <option value="3">Location three</option>
+          </select>
+        </div>
 
-<!-- For adding page content -->
-<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
-{% block content %}
-<div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-two-thirds">
-    <!-- Change the page title here -->
-    <h1>BS-Select prototype kit</h1>
+        <hr />
 
-    <!-- Add your content here -->
-    <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+        <h2>Add cohort details</h2>
 
-    <!-- End of content -->
-  </div>
-</div>
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="select-1"> Cohort name </label>
+          <select class="nhsuk-select" id="select-1" name="select-1">
+            <option value="1" selected>Cohort one</option>
+            <option value="2">Cohort two</option>
+            <option value="3">Cohort three</option>
+          </select>
+        </div>
+        <div class="nhsuk-form-group">
+          <fieldset
+            class="nhsuk-fieldset"
+            aria-describedby="example-hint"
+            role="group"
+          >
+            <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+              <h2 class="nhsuk-fieldset__heading">NTD start date</h2>
+            </legend>
+            <div class="nhsuk-hint" id="example-hint">
+              For example, 10 06 2020
+            </div>
+
+            <div class="nhsuk-date-input" id="example">
+              <div class="nhsuk-date-input__item">
+                <div class="nhsuk-form-group">
+                  <label
+                    class="nhsuk-label nhsuk-date-input__label"
+                    for="example-day"
+                  >
+                    Day
+                  </label>
+                  <input
+                    class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+                    id="example-day"
+                    name="example-day"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+              <div class="nhsuk-date-input__item">
+                <div class="nhsuk-form-group">
+                  <label
+                    class="nhsuk-label nhsuk-date-input__label"
+                    for="example-month"
+                  >
+                    Month
+                  </label>
+                  <input
+                    class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+                    id="example-month"
+                    name="example-month"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+              <div class="nhsuk-date-input__item">
+                <div class="nhsuk-form-group">
+                  <label
+                    class="nhsuk-label nhsuk-date-input__label"
+                    for="example-year"
+                  >
+                    Year
+                  </label>
+                  <input
+                    class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4"
+                    id="example-year"
+                    name="example-year"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="nhsuk-form-group">
+          <fieldset
+            class="nhsuk-fieldset"
+            aria-describedby="example-hint"
+            role="group"
+          >
+            <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+              <h2 class="nhsuk-fieldset__heading">NTD end date</h2>
+            </legend>
+            <div class="nhsuk-hint" id="example-hint">
+              For example, 10 06 2020
+            </div>
+
+            <div class="nhsuk-date-input" id="example">
+              <div class="nhsuk-date-input__item">
+                <div class="nhsuk-form-group">
+                  <label
+                    class="nhsuk-label nhsuk-date-input__label"
+                    for="example-day"
+                  >
+                    Day
+                  </label>
+                  <input
+                    class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+                    id="example-day"
+                    name="example-day"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+              <div class="nhsuk-date-input__item">
+                <div class="nhsuk-form-group">
+                  <label
+                    class="nhsuk-label nhsuk-date-input__label"
+                    for="example-month"
+                  >
+                    Month
+                  </label>
+                  <input
+                    class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+                    id="example-month"
+                    name="example-month"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+              <div class="nhsuk-date-input__item">
+                <div class="nhsuk-form-group">
+                  <label
+                    class="nhsuk-label nhsuk-date-input__label"
+                    for="example-year"
+                  >
+                    Year
+                  </label>
+                  <input
+                    class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4"
+                    id="example-year"
+                    name="example-year"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <p>
+          Invitation demand: <span><strong>250</strong></span>
+        </p>
+
+        <hr />
+
+        <!-- screening dates for capacity parameters -->
+
+        <h2>Capacity parameters</h2>
+
+        <div class="nhsuk-form-group">
+          <fieldset
+            class="nhsuk-fieldset"
+            aria-describedby="example-hint"
+            role="group"
+          >
+            <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+              <h2 class="nhsuk-fieldset__heading">Screening start date</h2>
+            </legend>
+            <div class="nhsuk-hint" id="example-hint">
+              For example, 10 06 2020
+            </div>
+
+            <div class="nhsuk-date-input" id="example">
+              <div class="nhsuk-date-input__item">
+                <div class="nhsuk-form-group">
+                  <label
+                    class="nhsuk-label nhsuk-date-input__label"
+                    for="example-day"
+                  >
+                    Day
+                  </label>
+                  <input
+                    class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+                    id="example-day"
+                    name="example-day"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+              <div class="nhsuk-date-input__item">
+                <div class="nhsuk-form-group">
+                  <label
+                    class="nhsuk-label nhsuk-date-input__label"
+                    for="example-month"
+                  >
+                    Month
+                  </label>
+                  <input
+                    class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+                    id="example-month"
+                    name="example-month"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+              <div class="nhsuk-date-input__item">
+                <div class="nhsuk-form-group">
+                  <label
+                    class="nhsuk-label nhsuk-date-input__label"
+                    for="example-year"
+                  >
+                    Year
+                  </label>
+                  <input
+                    class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4"
+                    id="example-year"
+                    name="example-year"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="nhsuk-form-group">
+          <fieldset
+            class="nhsuk-fieldset"
+            aria-describedby="example-hint"
+            role="group"
+          >
+            <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+              <h2 class="nhsuk-fieldset__heading">Screening end date</h2>
+            </legend>
+            <div class="nhsuk-hint" id="example-hint">
+              For example, 10 06 2020
+            </div>
+
+            <div class="nhsuk-date-input" id="example">
+              <div class="nhsuk-date-input__item">
+                <div class="nhsuk-form-group">
+                  <label
+                    class="nhsuk-label nhsuk-date-input__label"
+                    for="example-day"
+                  >
+                    Day
+                  </label>
+                  <input
+                    class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+                    id="example-day"
+                    name="example-day"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+              <div class="nhsuk-date-input__item">
+                <div class="nhsuk-form-group">
+                  <label
+                    class="nhsuk-label nhsuk-date-input__label"
+                    for="example-month"
+                  >
+                    Month
+                  </label>
+                  <input
+                    class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+                    id="example-month"
+                    name="example-month"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+              <div class="nhsuk-date-input__item">
+                <div class="nhsuk-form-group">
+                  <label
+                    class="nhsuk-label nhsuk-date-input__label"
+                    for="example-year"
+                  >
+                    Year
+                  </label>
+                  <input
+                    class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4"
+                    id="example-year"
+                    name="example-year"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <p>
+          Visit appointment capacity: <span><strong>200</strong></span>
+        </p>
+
+        <hr />
+
+        <!--Screening demand parameters-->
+
+        <h2>Screening demand parameters</h2>
+        <p>
+          Cohort expected attendance rate: <span><strong>85%</strong></span>
+        </p>
+        <div class="nhsuk-form-group">
+          <fieldset class="nhsuk-fieldset">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+              <h1 class="nhsuk-fieldset__heading"></h1>
+            </legend>
+
+            <div class="nhsuk-radios">
+              <div class="nhsuk-radios__item">
+                <input
+                  class="nhsuk-radios__input"
+                  id="example-1"
+                  name="example"
+                  type="radio"
+                  value="no"
+                />
+                <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                  Use a different attendance rate for this visit
+                </label>
+              </div>
+
+              <div class="nhsuk-radios__item">
+                <input
+                  class="nhsuk-radios__input"
+                  id="example-2"
+                  name="example"
+                  type="radio"
+                  value="yes"
+                />
+                <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                  Use the current attendance rate for this visit
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="nhsuk-form-group rlp-list">
+          <label>Add a contingency</label>
+          <input
+            class="nhsuk-input nhsuk-input--width-4"
+            id="input-width-4"
+            name="test-width-4"
+            type="number"
+          />
+        </div>
+        <p>
+          Visit demand: <span><strong>220</strong></span>
+        </p>
+        <hr />
+
+        <!--Buttons-->
+        <div class="btn-flex">
+          <button class="nhsuk-button" data-module="nhsuk-button" type="submit">
+            Create visit
+          </button>
+
+          <button
+            class="nhsuk-button nhsuk-button--secondary"
+            data-module="nhsuk-button"
+            type="submit"
+          >
+            Cancel changes
+          </button>
+        </div>
+
+        <!-- End of content -->
+      </div>
+    </div>
+  </main>
+</body>
 {% endblock %}

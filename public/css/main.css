@@ -7406,6 +7406,12 @@ li.pipe {
   font-size: 19px;
 }
 
+.rlp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .rlp-h1-container {
   display: flex;
   align-items: center;
