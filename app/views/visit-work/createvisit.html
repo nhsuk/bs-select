@@ -1,0 +1,52 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-bs.html' %}
+<!-- Set the page title -->
+{% block pageTitle %} BS-Select prototype {% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+<header>
+  <div class="bss-page-header">
+    <div>
+      <h1 class="bss-h1">Breast Screening Select</h1>
+    </div>
+    <div class="bss-header-mini-nav">
+      <p>Logged in as: <strong>BSS_uSER-oe_so1</strong></p>
+      <ul class="bss-header-links">
+        <li>
+          <a href="/index">Home page</a>
+        </li>
+        <li class="pipe">|</li>
+        <li><a href="#">Logout</a></li>
+        <li class="pipe">|</li>
+        <li><a href="#">Help</a></li>
+        <li class="pipe">|</li>
+        <li><a href="#">User guide</a></li>
+        <li class="pipe">|</li>
+        <li><a href="#">Release notes</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %} {% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <!-- Change the page title here -->
+    <h1>BS-Select prototype kit</h1>
+
+    <!-- Add your content here -->
+    <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+    <!-- End of content -->
+  </div>
+</div>
+{% endblock %}
