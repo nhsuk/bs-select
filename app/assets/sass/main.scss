@@ -51,6 +51,22 @@ html {
   gap: 3rem;
 }
 
+.btn-flex-centre {
+  display: flex;
+  padding: 1.5rem 0;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.btn-flex-centre button {
+  padding: 10px 30px;
+  background-color: #005eb8;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 .bs-table-link {
   background-color: #4c6272;
   box-shadow: 0 4px 0 #263139;
@@ -105,6 +121,7 @@ li.pipe {
 
 .bss-header-nav {
   background-color: #d8dde0;
+  height: 50px;
 }
 
 .bss-nav-links {
@@ -116,6 +133,16 @@ li.pipe {
   list-style: none;
 }
 
+.rlp-alert-bar {
+  background-color: #ffeb3b;
+}
+
+.rlp-alert-bar div {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 // forms and input */
 
 .attendance-span-value {
@@ -143,6 +170,7 @@ li.pipe {
 }
 
 // HOME PAGE TABLE
+
 .rlp-table {
   border: 1px solid #4c6272;
 }
@@ -153,6 +181,13 @@ li.pipe {
 .rlp-subhead {
   background-color: #aeb7bd;
   color: #ffffff;
+}
+
+.visit-icon-rlp {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 // SCREENING PAGINATION

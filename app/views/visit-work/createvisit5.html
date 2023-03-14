@@ -43,6 +43,12 @@
         <li><a href="#">Round planning</a></li>
       </ul>
     </nav>
+    <nav class="rlp-alert-bar">
+      <div class="nhsuk-width-container">
+        <span>You have visits with overlapping screening dates </span>
+        <a href="#">Dismiss</a>
+      </div>
+    </nav>
   </header>
   {% endblock %}
 
@@ -57,7 +63,12 @@
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds">
         <!-- Change the page title here -->
-        <h1>Visit list</h1>
+
+        <div class="btn-flex-centre">
+          <button>Create screening visit</button>
+          <button>Save visit plan</button>
+          <button>Manage saved visit plans</button>
+        </div>
 
         <table role="table" class="nhsuk-table-responsive">
           <thead role="rowgroup" class="nhsuk-table__head">
