@@ -7329,6 +7329,7 @@ html {
 
 .bss-main {
   width: 80rem;
+  margin: 0;
 }
 
 .btn-flex {
@@ -7452,8 +7453,9 @@ li.pipe {
   margin-bottom: 0;
 }
 
-.rlp-table {
-  border: 1px solid #4c6272;
+.rlp-table th,
+td {
+  border: 0.5px solid #d8dde0;
 }
 
 .rlp-thead {
